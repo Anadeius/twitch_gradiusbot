@@ -1,6 +1,6 @@
 ## Module loader written specifically for IRC
 from neoLoader import NeoLoader
-
+import threading
 
 class IrcLoader():
     modList = {}
@@ -29,6 +29,9 @@ class IrcLoader():
     def run(self, module, inp, sender, channel):
         ## Sends the user input to the plugin
         self.modList[module].send_input(inp, sender, channel)
+        t = threading.Thread(target=self.modList[module].send_input, args=(inp, sender, channel))
+        t.start()
+        t.join()
 
     def desc(self, module):
         ## Runs the desc method for the module
