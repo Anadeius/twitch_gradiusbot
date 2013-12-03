@@ -1,6 +1,7 @@
 ## This is an example file for how all IRC modules should be
 
 import time
+import random
 ## Name of the module, to be returned in desc()
 name = "Example.py"
 
@@ -12,9 +13,11 @@ def buildup(send_message_callback):
     send_message_function = send_message_callback
 
 def send_input(inp, sender, channel):
-    message = "I'm sleeping for 5 seconds."
-    send_message_function(channel,message)
-    time.sleep(5)
+    if sender == "riotgradius":
+        rand_num = random.randint(1,10)
+        message = inp + " " + str(rand_num)
+        time.sleep(rand_num)
+        send_message_function(channel,message)
 
 ## Returns a description of the module including the name at the top
 def desc():
