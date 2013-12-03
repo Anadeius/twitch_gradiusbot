@@ -1,0 +1,11 @@
+[Settings]
+server =
+port =
+nick =
+username =
+password =
+channels =
+    #riotgradius
+owner =
+plugins = None
+pb_api =
