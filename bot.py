@@ -1,9 +1,11 @@
 ## ircutils documentation: http://dev.guardedcode.com/docs/ircutils/py-modindex.html
-from ircutils import client
 import ConfigParser
 import sys
-from message_processor import MessageProcessor
-from irc_loader import IrcLoader
+
+from ircutils import client
+
+from libs.message_processor import MessageProcessor
+from libs.irc_loader import IrcLoader
 
 
 class IrcBot(client.SimpleClient):
