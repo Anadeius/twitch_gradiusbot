@@ -59,7 +59,6 @@ class IrcBot(client.SimpleClient):
                 except:
                     print "Error unloading mod:", sys.exc_info()
 
-        ## FIND WHY THIS IS RUNNING THE SEND MESSAGE TWICE
         for mod in self.plugin_loader.listMods():
             try:
                 self.mp.thread_message(self.plugin_loader.run, (mod, event.message, event.source, event.target))
