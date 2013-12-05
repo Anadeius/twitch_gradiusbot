@@ -14,12 +14,14 @@ trivia_db = client.trivia_db
 status = trivia_db.status
 questions = trivia_db.questions
 
+
 def buildup(send_message_callback):
     print "This function is run at buildup of function."
     global send_message_function
     send_message_function = send_message_callback
     s_post = {"name": "status", "asked": False, "loop": False, "loop_count": 0, "answer": "", "question": ""}
     status.insert(s_post)
+
 
 def send_input(inp, sender, channel):
     if inp == "trivia" and not status.find_one()["asked"] and perm.isMod(sender):
@@ -34,11 +36,14 @@ def send_input(inp, sender, channel):
         status.update({"name": "status"}, {"$set": {"loop_count": str(int(inp.split()[1]) - 1)}})
         trivia_question(channel)
 
+
 def desc():
     return ""
 
+
 def teardown():
     print "Removing the Trivia module."
+
 
 def trivia_question(channel):
     if not status.find_one()["asked"]:
@@ -51,9 +56,10 @@ def trivia_question(channel):
 
         send_message_function(channel, status.find_one()["question"])
 
-def trivia_answer(channel,message,sender):
+
+def trivia_answer(channel, message, sender):
     if str.lower(message) == str.lower(str(data['answer'])):
-        status.update({"name":"status"}, {"$set": {"asked": False}})
+        status.update({"name": "status"}, {"$set": {"asked": False}})
         send_message_function(channel,"You are correct " + sender + "!")
         sb.addPoints(sender, 10)
 
