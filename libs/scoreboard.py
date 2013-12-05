@@ -1,7 +1,7 @@
 import pickle
-import os.path
 import ConfigParser
 import pastebin_python
+import os.path
 
 class Scoreboard:
     def __init__(self):
@@ -12,9 +12,8 @@ class Scoreboard:
             self.sb = pickle.load(open(self.file_name, "rb"))
         else:
             self.sb = {}
-
         config = ConfigParser.RawConfigParser()
-        config.read('configs/twitch.cfg')
+        config.read('twitch.cfg')
         pb_api = config.get('Settings', 'pb_api')
         self.paste = pastebin_python.PastebinPython(api_dev_key=pb_api)
 
