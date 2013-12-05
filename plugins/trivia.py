@@ -18,22 +18,20 @@ def buildup(send_message_callback):
     print "This function is run at buildup of function."
     global send_message_function
     send_message_function = send_message_callback
-    s_post = {"name": "status", "asked": False, "loop": False, "loop_count": 0, "answer": ""}
+    s_post = {"name": "status", "asked": False, "loop": False, "loop_count": 0, "answer": "", "question": ""}
     status.insert(s_post)
 
 def send_input(inp, sender, channel):
-    if inp == "trivia" and data["asked"] == "false" and perm.isMod(sender):
+    if inp == "trivia" and not status.find_one()["asked"] and perm.isMod(sender):
         trivia_question(channel)
 
-    if data["asked"] == "true":
-        trivia_answer(channel,inp,sender)
+    if status.find_one()["asked"]:
+        trivia_answer(channel, inp, sender)
 
     if len(inp.split()) == 2 and inp.split()[0] == "trivia" and perm.isMod(sender):
         send_message_function(channel,"Starting a trivia loop of " + inp.split()[1] + " questions.")
-        data["loop"] = "true"
-        # THIS VVV MATCHES THIS ^^^^, CHANGE ALL OTHERS
-        status.update({"name":"status"}, {"$set": {"loop": True}})
-        data["loop_count"] = str(int(inp.split()[1]) - 1)
+        status.update({"name": "status"}, {"$set": {"loop": True}})
+        status.update({"name": "status"}, {"$set": {"loop_count": str(int(inp.split()[1]) - 1)}})
         trivia_question(channel)
 
 def desc():
@@ -43,32 +41,26 @@ def teardown():
     print "Removing the Trivia module."
 
 def trivia_question(channel):
-    ans = ""
-
-    if data["asked"] == "false":
+    if not status.find_one()["asked"]:
         try:
-            data["answer"] = s[1]
-            ans = s[0].encode('ascii', 'ignore')
-            data["asked"] = "true"
-            temp.save_temp(t_file, data)
+            status.update({"name": "status"}, {"$set": {"answer": "bestanswer"}})
+            status.update({"name": "status"}, {"$set": {"question": "bestquestion"}})
+            status.update({"name": "status"}, {"$set": {"asked": True}})
         except:
             print "Error generating question:", sys.exc_info()
 
-        send_message_function(channel,ans)
+        send_message_function(channel, status.find_one()["question"])
 
 def trivia_answer(channel,message,sender):
     if str.lower(message) == str.lower(str(data['answer'])):
-        data["asked"] = "false"
-        temp.save_temp(t_file, data)
+        status.update({"name":"status"}, {"$set": {"asked": False}})
         send_message_function(channel,"You are correct " + sender + "!")
         sb.addPoints(sender, 10)
 
-        if data["loop"] == "true" and int(data["loop_count"]) == 0:
-            data["loop"] = "false"
+        if status.find_one()["loop"] and status.find_one()["loop_count"] == 0:
+            status.update({"name": "status"}, {"$set": {"loop": False}})
             send_message_function(channel,"I'm done with my trivia spree now.")
-            temp.save_temp(t_file, data)
 
-        if data["loop"] == "true" and int(data["loop_count"]) != 0:
-            data["loop_count"] = str(int(data["loop_count"]) - 1)
-            temp.save_temp(t_file, data)
+        if status.find_one()["loop"] and status.find_one()["loop_count"] != 0:
+            status.update({"name": "status"}, {"$set": {"loop_count": int(status.find_one()["loop_count"])}})
             trivia_question(channel)
