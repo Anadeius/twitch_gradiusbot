@@ -1,4 +1,5 @@
 import sys
+import random
 import pymongo
 import libs.load_temp as temp
 from libs.permissions import Permissions
@@ -21,6 +22,7 @@ def buildup(send_message_callback):
     send_message_function = send_message_callback
     s_post = {"asked": False, "loop": False, "loop_count": 0, "answer": "", "question": ""}
     global post_id
+    status.remove()
     post_id = status.insert(s_post)
 
 
@@ -49,8 +51,11 @@ def teardown():
 def trivia_question(channel):
     if not status.find_one()["asked"]:
         try:
-            status.update({'_id': post_id}, {"$set": {"answer": "bestanswer"}})
-            status.update({'_id': post_id}, {"$set": {"question": "bestquestion"}})
+            ind = random.randint(0, questions.count())
+            answer = str(questions.find()[ind]["answer"])
+            question = str(questions.find()[ind]["question"])
+            status.update({'_id': post_id}, {"$set": {"answer": answer}})
+            status.update({'_id': post_id}, {"$set": {"question": question}})
             status.update({'_id': post_id}, {"$set": {"asked": True}})
         except:
             print "Error generating question:", sys.exc_info()
