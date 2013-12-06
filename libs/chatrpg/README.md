@@ -13,3 +13,6 @@ A text based multiplayer RPG for IRC chats. Player characters earn XP by interac
 ## Chat Commands
 
 ## FAQ
+
+#### How do I stay connected to Twitch chat via an IRC client?
+*insert guide here*
