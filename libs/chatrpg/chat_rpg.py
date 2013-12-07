@@ -89,7 +89,10 @@ class ChatRpg():
         print
 
     def gen_creature(self, difficulty):
-        print
+        nouns = open("data/nouns.txt").read().splitlines()
+        adj = open("data/adjectives.txt").read().splitlines()
+        name = random.choice(adj) + " " + random.choice(nouns)
+        print name
 
     def save_character(self):
         print

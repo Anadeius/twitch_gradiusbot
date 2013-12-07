@@ -1,0 +1,393 @@
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23bf" }, "answer" : "Ahri", "question" : "Should I make your pulse rise? Or...STOP!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c0" }, "answer" : "Akali", "question" : "I suggest you run... I want to savor this." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c1" }, "answer" : "Alistar", "question" : "Mess with the bull and you get the horns!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c2" }, "answer" : "Anivia", "question" : "So young, so naive!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c3" }, "answer" : "Ahri", "question" : "Don't you trust me?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c4" }, "answer" : "Ahri", "question" : "Come try your luck, if you think you're in my league." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c5" }, "answer" : "Akali", "question" : "As balance dictates." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c6" }, "answer" : "Alistar", "question" : "Nothing can hold me back!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c7" }, "answer" : "Alistar", "question" : "You can't milk those." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c8" }, "answer" : "Amumu", "question" : "Let me give you a hug." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23c9" }, "answer" : "Amumu", "question" : "Come play with me." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23ca" }, "answer" : "Amumu", "question" : "I thought you'd never pick me." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23cb" }, "answer" : "Anivia", "question" : "On my wings." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23cc" }, "answer" : "Annie", "question" : "You wanna play too? It'll be fun!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23cd" }, "answer" : "Annie", "question" : "Beaten by a little girl... Hah!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23ce" }, "answer" : "Annie", "question" : "You smell like... burning!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23cf" }, "answer" : "Ashe", "question" : "Take a good look. It's the last you're going to get!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d0" }, "answer" : "Blitzcrank", "question" : "The time of man has come to an end." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d1" }, "answer" : "Blitzcrank", "question" : "Metal is harder than flesh." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d2" }, "answer" : "Brand", "question" : "Ready to set the world on fire? Heheheh..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d3" }, "answer" : "Brand", "question" : "Is it hot in here or is it just me?!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d4" }, "answer" : "Caitlyn", "question" : "Would you prefer the good cop, or the bad cop?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d5" }, "answer" : "Caitlyn", "question" : "Boom. Headshot." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d6" }, "answer" : "Caitlyn", "question" : "Sorry boys, I keep the fuzzy cuffs at home." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d7" }, "answer" : "Cassiopeia", "question" : "Don't you find me... beautiful?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d8" }, "answer" : "Cassiopeia", "question" : "You think I'm a freak; let me get on your level." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23d9" }, "answer" : "Cho'Gath", "question" : "You'd wish the world you know to end! Yeeeesssss..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23da" }, "answer" : "Cho'Gath", "question" : "You shall not escape!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23db" }, "answer" : "Cho'Gath", "question" : "Afraid of the dark...? Wise!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23dc" }, "answer" : "Corki", "question" : "Lima Oscar Lima!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23dd" }, "answer" : "Corki", "question" : "Ready to fly!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23de" }, "answer" : "Corki", "question" : "Bombs away!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23df" }, "answer" : "Darius", "question" : "They will regret opposing me." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e0" }, "answer" : "Darius", "question" : "Defy Noxus and taste your own blood." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e1" }, "answer" : "Darius", "question" : "Don't turn your back or expose your neck." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e2" }, "answer" : "Diana", "question" : "A new moon is rising." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e3" }, "answer" : "Diana", "question" : "Night approaches." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e4" }, "answer" : "Mundo", "question" : "(...) too strong for you!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e5" }, "answer" : "Mundo", "question" : "(...) think you a big sissy!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e6" }, "answer" : "Draven", "question" : "Welcome to the League of (...)" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e7" }, "answer" : "Draven", "question" : "(...) does it all.. with style!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e8" }, "answer" : "Draven", "question" : "Come out and play. Heheheh." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23e9" }, "answer" : "Elise", "question" : "Only the spider is safe in her web." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23ea" }, "answer" : "Elise", "question" : "I hear a man likes a lady with legs." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23eb" }, "answer" : "Elise", "question" : "My true beauty is beneath the skin." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23ec" }, "answer" : "Evelynn", "question" : "The night is my veil..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23ed" }, "answer" : "Evelynn", "question" : "Mmm, I like it when they scream." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23ee" }, "answer" : "Evelynn", "question" : "I may be bad, but I feel good..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23ef" }, "answer" : "Ezreal", "question" : "Noxians... I hate those guys..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f0" }, "answer" : "Ezreal", "question" : "You belong in a museum!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f1" }, "answer" : "Fiddlesticks", "question" : "I think I'll let you suffer for a while..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f2" }, "answer" : "Fiddlesticks", "question" : "I feel your fear..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f3" }, "answer" : "Fiora", "question" : "I long for a worthy opponent." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f4" }, "answer" : "Fiora", "question" : "En garde!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f5" }, "answer" : "Fiora", "question" : "Precision and grace." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f6" }, "answer" : "Fiora", "question" : "Talent, honor, discipline, and pretty pictures!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f7" }, "answer" : "Fizz", "question" : "You're boring." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f8" }, "answer" : "Fizz", "question" : "Feeding time!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23f9" }, "answer" : "Galio", "question" : "A guardian is always prepared." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23fa" }, "answer" : "Galio", "question" : "The will of Demacia." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23fb" }, "answer" : "Galio", "question" : "You should come back with more bad guys." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23fc" }, "answer" : "Gangplank", "question" : "Prepare to be boarded!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23fd" }, "answer" : "Gangplank", "question" : "Enjoy your visit to the depths of the sea, landlubber!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23fe" }, "answer" : "Garen", "question" : "To the Fields of Justice!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db23ff" }, "answer" : "Garen", "question" : "For Demacia." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2400" }, "answer" : "Garen", "question" : "Come forth, you will find honor in death." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2401" }, "answer" : "Gragas", "question" : "Dodge this!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2402" }, "answer" : "Gragas", "question" : "I'll drink you under the table, scrub!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2403" }, "answer" : "Graves", "question" : "Go ahead! I like moving targets." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2404" }, "answer" : "Graves", "question" : "Lights out." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2405" }, "answer" : "Graves", "question" : "Hope you weren't planning to die of natural causes." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2406" }, "answer" : "Hecarim", "question" : "Behold the might of the Shadow Isles." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2407" }, "answer" : "Hecarim", "question" : "Your life is a burden. I bring you freedom!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2408" }, "answer" : "Heimerdinger", "question" : "Indeed, a wise choice." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2409" }, "answer" : "Heimerdinger", "question" : "Eureka!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db240a" }, "answer" : "Heimerdinger", "question" : "Order, entropy; a never-ending cycle." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db240b" }, "answer" : "Irelia", "question" : "My blade is at your service!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db240c" }, "answer" : "Irelia", "question" : "You rely on your weapons too much, try letting go!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db240d" }, "answer" : "Janna", "question" : "And you thought it was just a harmless breeze!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db240e" }, "answer" : "Janna", "question" : "Upon the wind." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db240f" }, "answer" : "Janna", "question" : "The storm approaches." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2410" }, "answer" : "Jarvan IV", "question" : "By my will, this shall be finished." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2411" }, "answer" : "Jarvan IV", "question" : "For my father, the king." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2412" }, "answer" : "Jarvan IV", "question" : "You like my weapon? Come on over for a closer inspection!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2413" }, "answer" : "Jax", "question" : "Who wants a piece of the champ?!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2414" }, "answer" : "Jax", "question" : "Imagine if I had a real weapon!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2415" }, "answer" : "Jayce", "question" : "I fight for a brighter tomorrow." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2416" }, "answer" : "Jayce", "question" : "For Piltover!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2417" }, "answer" : "Jayce", "question" : "This is what the future looks like." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2418" }, "answer" : "Jayce", "question" : "Hammer time!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2419" }, "answer" : "Karma", "question" : "You should feel honored to face me." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db241a" }, "answer" : "Karma", "question" : "To conquer oneself, is to conquer all." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db241b" }, "answer" : "Karthus", "question" : "I'll put you... in my book!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db241c" }, "answer" : "Karthus", "question" : "Their pain... is my pleasure!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db241d" }, "answer" : "Kassadin", "question" : "Try that again!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db241e" }, "answer" : "Kassadin", "question" : "Your magic is powerless against me!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db241f" }, "answer" : "Katarina", "question" : "Violence solves everything!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2420" }, "answer" : "Katarina", "question" : "Better dead than dull." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2421" }, "answer" : "Katarina", "question" : "The dance of blades." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2422" }, "answer" : "Kayle", "question" : "Come here! I'll teach you all about the afterlife." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2423" }, "answer" : "Kayle", "question" : "Are... You sure you're not in the wrong league?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2424" }, "answer" : "Kennen", "question" : "Big targets are the best! There's more to aim at!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2425" }, "answer" : "Kennen", "question" : "Yes, they make shurikens this small!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2426" }, "answer" : "Kha'Zix", "question" : "Position for ambush." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2427" }, "answer" : "Kha'Zix", "question" : "Hahaha. You're barely worth eating!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2428" }, "answer" : "Kha'Zix", "question" : "They'll never see me." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2429" }, "answer" : "Leona", "question" : "Twilight fades." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db242a" }, "answer" : "Leona", "question" : "Chosen of the sun." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db242b" }, "answer" : "Leona", "question" : "Next time, try to leave a dent." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db242c" }, "answer" : "LeBlanc", "question" : "For a moment I thought I'd broken a sweat." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db242d" }, "answer" : "LeBlanc", "question" : "Surprised to see me?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db242e" }, "answer" : "Lulu", "question" : "Dust 'em, Pix!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db242f" }, "answer" : "Lulu", "question" : "Come on you! Let's dance. HA!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2430" }, "answer" : "Lulu", "question" : "Whoa, dizzy." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2431" }, "answer" : "Lulu", "question" : "Yup! That tasted purple!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2432" }, "answer" : "Lee Sin", "question" : "Blindness is no impairment against a smelly enemy." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2433" }, "answer" : "Lee Sin", "question" : "You have not earned victory this day." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2434" }, "answer" : "Lee Sin", "question" : "Master yourself, master the enemy." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2435" }, "answer" : "Lee Sin", "question" : "Your will, my hands." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2436" }, "answer" : "Kog'Maw", "question" : "Time to feast!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2437" }, "answer" : "Kog'Maw", "question" : "Want meat!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2438" }, "answer" : "Malphite", "question" : "You will lose." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2439" }, "answer" : "Malphite", "question" : "Rock solid." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db243a" }, "answer" : "Lux", "question" : "Double rainbow? What does it mean?..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db243b" }, "answer" : "Lux", "question" : "Light'em up!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db243c" }, "answer" : "Lux", "question" : "Banish the shadows!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db243d" }, "answer" : "Malzahar", "question" : "Come mortal, witness your demise!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db243e" }, "answer" : "Malzahar", "question" : "For the Void." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db243f" }, "answer" : "Maokai", "question" : "Nature can be a real mother. Hahaha!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2440" }, "answer" : "Maokai", "question" : "You should not defy nature!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2441" }, "answer" : "Master Yi", "question" : "My blade is yours." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2442" }, "answer" : "Master Yi", "question" : "Wuju Style!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2443" }, "answer" : "Miss Fortune", "question" : "I always shoot first." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2444" }, "answer" : "Miss Fortune", "question" : "You've got dangerous eyes... I like that." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2445" }, "answer" : "Morgana", "question" : "You too will be judged." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2446" }, "answer" : "Morgana", "question" : "They will suffer." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2447" }, "answer" : "Morgana", "question" : "I'll have my revenge." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2448" }, "answer" : "Nasus", "question" : "The cycle of life and death continues. We will live, they will die." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2449" }, "answer" : "Nasus", "question" : "I bring death." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db244a" }, "answer" : "Nasus", "question" : "Life is part of a cycle; yours is over." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db244b" }, "answer" : "Nidalee", "question" : "Here mousy, mousy, mousy..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db244c" }, "answer" : "Nidalee", "question" : "Mmm, the taste of coward." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db244d" }, "answer" : "Nunu", "question" : "Speak softly...and ride a big yeti!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db244e" }, "answer" : "Nunu", "question" : "Can't catch me!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db244f" }, "answer" : "Orianna", "question" : "Why are they running?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2450" }, "answer" : "Orianna", "question" : "Pulse." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2451" }, "answer" : "Nami", "question" : "You're in over your head." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2452" }, "answer" : "Nami", "question" : "Swim at your own risk." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2453" }, "answer" : "Olaf", "question" : "Leave nothing behind!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2454" }, "answer" : "Olaf", "question" : "C'mon, I won't hurt you. I promise!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2455" }, "answer" : "Olaf", "question" : "The might of Lokfar approaches!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2456" }, "answer" : "Nautilus", "question" : "Lost and forgotten." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2457" }, "answer" : "Nautilus", "question" : "You are in the deep end now!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2458" }, "answer" : "Nautilus", "question" : "The endless march." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2459" }, "answer" : "Mordekaiser", "question" : "I like my weapons how I like my music... heavy and metal!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db245a" }, "answer" : "Mordekaiser", "question" : "Misery loves company." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db245b" }, "answer" : "Nocturne", "question" : "Embrace the darkness." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db245c" }, "answer" : "Nocturne", "question" : "I sense fear." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db245d" }, "answer" : "Nocturne", "question" : "Bring me more flesh bags to slice up!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db245e" }, "answer" : "Pantheon", "question" : "With pride." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db245f" }, "answer" : "Pantheon", "question" : "Getting kicked into a well is the least of your worries!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2460" }, "answer" : "Poppy", "question" : "Valoran will know harmony." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2461" }, "answer" : "Poppy", "question" : "Why don't you just lay down your weapons now?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2462" }, "answer" : "Zyra", "question" : "This land is mine!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2463" }, "answer" : "Zyra", "question" : "No place is safe while I'm free." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2464" }, "answer" : "Renekton", "question" : "As I live, all will die!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2465" }, "answer" : "Renekton", "question" : "Nasus cannot escape me forever!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2466" }, "answer" : "Renekton", "question" : "Chaos will follow." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2467" }, "answer" : "Rammus", "question" : "Ok." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2468" }, "answer" : "Riven", "question" : "You are beyond redemption!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2469" }, "answer" : "Riven", "question" : "What is broken can be reforged!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db246a" }, "answer" : "Rengar", "question" : "Tonight we hunt!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db246b" }, "answer" : "Rengar", "question" : "You have a warrior's heart. I think I'll take it." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db246c" }, "answer" : "Rumble", "question" : "Let's get in the fight!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db246d" }, "answer" : "Rumble", "question" : "Who you callin' little?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db246e" }, "answer" : "Cho'Gath", "question" : "Nom nom nom nom nom nom nom!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db246f" }, "answer" : "Ryze", "question" : "I got these tattoos in rune prison!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2470" }, "answer" : "Ryze", "question" : "Unpleasant? I'll show you unpleasant!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2471" }, "answer" : "Sejuani", "question" : "Winter is coming." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2472" }, "answer" : "Sejuani", "question" : "You make excellent boar food." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2473" }, "answer" : "Sejuani", "question" : "Bristle, attack!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2474" }, "answer" : "Shaco", "question" : "How about a magic trick?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2475" }, "answer" : "Shaco", "question" : "Now you see me, now you don't!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2476" }, "answer" : "Shaco", "question" : "Look... behind you." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2477" }, "answer" : "Shen", "question" : "From the shadows." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2478" }, "answer" : "Shen", "question" : "Without a sound." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2479" }, "answer" : "Shen", "question" : "Target marked." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db247a" }, "answer" : "Singed", "question" : "How about a drink?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db247b" }, "answer" : "Singed", "question" : "Shaken, not stirred." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db247c" }, "answer" : "Sivir", "question" : "Enjoy that breath, it will be your last." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db247d" }, "answer" : "Sivir", "question" : "Line them up and knock them down." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db247e" }, "answer" : "Shyvana", "question" : "They have faced nothing like me." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db247f" }, "answer" : "Shyvana", "question" : "The dragon nears." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2480" }, "answer" : "Sona", "question" : "A symphony of justice." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2481" }, "answer" : "Sona", "question" : "With perfect tempo." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2482" }, "answer" : "Sion", "question" : "Stop being a bonehead!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2483" }, "answer" : "Swain", "question" : "The early bird guts the worm" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2484" }, "answer" : "Swain", "question" : "A Noxian does not dawdle." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2485" }, "answer" : "Skarner", "question" : "Now I've got you!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2486" }, "answer" : "Skarner", "question" : "I miss my kind." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2487" }, "answer" : "Soraka", "question" : "Violence cannot go unanswered." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2488" }, "answer" : "Soraka", "question" : "Let me guide you." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2489" }, "answer" : "Syndra", "question" : "So much untapped power!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db248a" }, "answer" : "Syndra", "question" : "My potential is limitless!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db248b" }, "answer" : "Syndra", "question" : "See? Absolute control." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db248c" }, "answer" : "Talon", "question" : "Enjoy the taste of steel." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db248d" }, "answer" : "Talon", "question" : "Only fools pledge life to honor." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db248e" }, "answer" : "Talon", "question" : "Have you anything to offer but weakness?!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db248f" }, "answer" : "Teemo", "question" : "Captain (...) on duty." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2490" }, "answer" : "Teemo", "question" : "Hut two three four." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2491" }, "answer" : "Taric", "question" : "Emerald for insight." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2492" }, "answer" : "Taric", "question" : "Gems hold their edge." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2493" }, "answer" : "Taric", "question" : "Opal for harmony." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2494" }, "answer" : "Twisted Fate", "question" : "Never lost a fair game... or played one." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2495" }, "answer" : "Twisted Fate", "question" : "It's all in the cards." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2496" }, "answer" : "Trundle", "question" : "If you want me to hit you less, die sooner." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2497" }, "answer" : "Trundle", "question" : "Defeat (...)? Are you trolling?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2498" }, "answer" : "Tristana", "question" : "I wanna shoot something!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2499" }, "answer" : "Tristana", "question" : "Ready. Aim. Fire!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db249a" }, "answer" : "Tristana", "question" : "Is that a rocket in your pocket?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db249b" }, "answer" : "Tryndamere", "question" : "This'll be a slaughter" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db249c" }, "answer" : "Tryndamere", "question" : "My right arm is a lot stronger than my left arm!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db249d" }, "answer" : "Tryndamere", "question" : "I am your worst nightmare!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db249e" }, "answer" : "Udyr", "question" : "Our rage is beyond your control!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db249f" }, "answer" : "Udyr", "question" : "Weapons are for the weak" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a0" }, "answer" : "Varus", "question" : "The cost of your life is one arrow." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a1" }, "answer" : "Varus", "question" : "I am forsaken." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a2" }, "answer" : "Varus", "question" : "Give me a target." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a3" }, "answer" : "Veigar", "question" : "I will swallow your soul." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a4" }, "answer" : "Veigar", "question" : "I am evil, stop laughing!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a5" }, "answer" : "Veigar", "question" : "It's only a short way? Is that a short joke?!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a6" }, "answer" : "Twitch", "question" : "Oh, what's that smell? Oh, it's me..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a7" }, "answer" : "Twitch", "question" : "Oh ho ho yes yes..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a8" }, "answer" : "Viktor", "question" : "Join the glorious evolution." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24a9" }, "answer" : "Viktor", "question" : "Metal is perfection." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24aa" }, "answer" : "Vayne", "question" : "On wings of night." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ab" }, "answer" : "Vayne", "question" : "The dark should fear me." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ac" }, "answer" : "Vayne", "question" : "Silver of the moon." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ad" }, "answer" : "Volibear", "question" : "Is that a challenge?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ae" }, "answer" : "Volibear", "question" : "Let the storm follow in my wake." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24af" }, "answer" : "Volibear", "question" : "Strength and wisdom guide me." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b0" }, "answer" : "Vladimir", "question" : "My cup is half empty." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b1" }, "answer" : "Vladimir", "question" : "Let's pool our efforts." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b2" }, "answer" : "Vi", "question" : "A little smash and grab." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b3" }, "answer" : "Vi", "question" : "Freeze! Or don't, I don't care." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b4" }, "answer" : "Urgot", "question" : "Endless misery." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b5" }, "answer" : "Urgot", "question" : "They will know fear." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b6" }, "answer" : "Urgot", "question" : "You can't beat me, so join me. I need a good pair of legs." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b7" }, "answer" : "Wukong", "question" : "Wuju style." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b8" }, "answer" : "Wukong", "question" : "Bring me a real challenge." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24b9" }, "answer" : "Wukong", "question" : "No matter how far it is to the top, it's still within my grasp!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ba" }, "answer" : "Xerath", "question" : "Behold my power." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24bb" }, "answer" : "Xerath", "question" : "I am eternal." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24bc" }, "answer" : "Warwick", "question" : "It's only fun if they run." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24bd" }, "answer" : "Warwick", "question" : "Mmmm... mmm... I smell their stench." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24be" }, "answer" : "Warwick", "question" : "It's time to hunt" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24bf" }, "answer" : "Xin Zhao", "question" : "To triumph!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c0" }, "answer" : "Xin Zhao", "question" : "A Demacian does not retreat." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c1" }, "answer" : "Xin Zhao", "question" : "The warrior's spirit is never broken." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c2" }, "answer" : "Zed", "question" : "Embrace the shadow... or die in darkness!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c3" }, "answer" : "Zilean", "question" : "I've seen your death, it was painful..." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c4" }, "answer" : "Zilean", "question" : "Time flies like an arrow; fruit flies like banana." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c5" }, "answer" : "Yorick", "question" : "Death is only the beginning." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c6" }, "answer" : "Yorick", "question" : "Death is the gift I offer." }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c7" }, "answer" : "Ziggs", "question" : "It's gonna blow!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c8" }, "answer" : "Ziggs", "question" : "Fire in the hole!" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24c9" }, "answer" : "Blue", "question" : "Which color is Veigar?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ca" }, "answer" : "395", "question" : "What is Ashe's base health?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24cb" }, "answer" : "Curse of the Sad Mummy", "question" : "What is the name of Amumu's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24cc" }, "answer" : "9", "question" : "How many tails does Ahri have?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24cd" }, "answer" : "The Fist of Shadow", "question" : "What is the title of Akali?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ce" }, "answer" : "Requiem", "question" : "What is the name of Karthus' ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24cf" }, "answer" : "Crescendo", "question" : "What is the name of Sona's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d0" }, "answer" : "Grand skyfall", "question" : "What is the name of Pantheon's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d1" }, "answer" : "Hemoplague", "question" : "What is the name of Vladimir's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d2" }, "answer" : "Idol of Durand", "question" : "What is the name of Galio's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d3" }, "answer" : "Paranoia", "question" : "What is the name of Nocturne's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d4" }, "answer" : "Children of the Grave", "question" : "What is the name of Mordekaiser's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d5" }, "answer" : "Ace in the Hole", "question" : "What is the name of Caitlyn's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d6" }, "answer" : "Absolute Zero", "question" : "What is the name of Nunu's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d7" }, "answer" : "Crowstorm", "question" : "What is the name of Fiddlesticks's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d8" }, "answer" : "Demacian Justice", "question" : "What is the name of Garen's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24d9" }, "answer" : "Diplomatic Immunity", "question" : "What is the name of Poppy's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24da" }, "answer" : "Living Artillery", "question" : "What is the name of Kog Maw's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24db" }, "answer" : "Chum the Waters", "question" : "What is the name of Fizz's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24dc" }, "answer" : "Wish", "question" : "What is the name of Soraka's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24dd" }, "answer" : "Enchanted Crystal Arrow", "question" : "What is the name of Ashe's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24de" }, "answer" : "Bullet Time", "question" : "What is the name of Miss Fortune's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24df" }, "answer" : "Noxious Trap", "question" : "What is the name of Teemo's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e0" }, "answer" : "Caitlyn", "question" : "Who says the quote: Wanna see a hat trick?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e1" }, "answer" : "Where he pleases", "question" : "Where does Mundo go?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e2" }, "answer" : "Light", "question" : "What does Lux mean in latin?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e3" }, "answer" : "4 minutes", "question" : "What is the cooldown of Anivia's rebirth egg?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e4" }, "answer" : "25 seconds", "question" : "What is the cooldown of Anivia's Crystallize ability (wall)?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e5" }, "answer" : "Impale", "question" : "What is the name of Skarner's ultimate ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e6" }, "answer" : "Dread", "question" : "What is the name of Fiddlesticks' passive ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e7" }, "answer" : "Carrion Renewal", "question" : "What is the name of Swain's passive ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e8" }, "answer" : "Soul Syphon", "question" : "What is the name of Morgana's passive ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24e9" }, "answer" : "Mana Barrier", "question" : "What is the name of Blitzcrank's passive ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ea" }, "answer" : "Fleet of Foot", "question" : "What is the name of Sivir's passive ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24eb" }, "answer" : "Perseverance", "question" : "What is the name of Garen's passive ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ec" }, "answer" : "Umbra Blades", "question" : "What is the name of Nocturne's passive ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ed" }, "answer" : "Cursed Touch", "question" : "What is the name of Amumu's passive ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ee" }, "answer" : "Leona", "question" : "Whose is the ultimate ability Solar Flare?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ef" }, "answer" : "Cassiopeia", "question" : "Whose is the ultimate ability Petrifying Gaze?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f0" }, "answer" : "Olaf", "question" : "Whose is the ultimate ability Ragnarok?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f1" }, "answer" : "Janna", "question" : "Whose is the ultimate ability Monsoon?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f2" }, "answer" : "Sivir", "question" : "Whose is the ultimate ability On the Hunt?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f3" }, "answer" : "Shyvana", "question" : "Whose is the ultimate ability Dragon's Descent?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f4" }, "answer" : "Nidalee", "question" : "Whose is the ultimate Aspect of the Cougar?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f5" }, "answer" : "Twitch", "question" : "Whose is the ultimate Spray and Pray?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f6" }, "answer" : "Master Yi", "question" : "Whose is the ultimate ability Highlander?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f7" }, "answer" : "Sona", "question" : "Whose is the ultimate ability Crescendo?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f8" }, "answer" : "Singed", "question" : "Whose is the ultimate ability Insanity Potion?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24f9" }, "answer" : "Sejuani", "question" : "Whose is the ultimate ability Glacial Prison?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24fa" }, "answer" : "Trundle", "question" : "Whose is the ultimate ability Agony?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24fb" }, "answer" : "Soraka", "question" : "Whose is the ultimate ability Wish?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24fc" }, "answer" : "Renekton", "question" : "Whose is the ultimate ability Dominus?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24fd" }, "answer" : "Brand", "question" : "Whose is the ultimate ability Pyroclasm?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24fe" }, "answer" : "Miss Fortune", "question" : "Whose is the ultimate ability Bullet Time?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db24ff" }, "answer" : "LeBlanc", "question" : "Whose is the ultimate ability Mimic?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2500" }, "answer" : "Graves", "question" : "Whose is the ultimate ability Collateral Damage?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2501" }, "answer" : "Talon", "question" : "Whose is the ultimate ability Shadow Assault?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2502" }, "answer" : "Fiora", "question" : "Whose is the ultimate ability Blade Waltz?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2503" }, "answer" : "Blitzcrank", "question" : "Whose is the ultimate ability Static Field?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2504" }, "answer" : "Malzahar", "question" : "Whose is the ultimate ability Nether Grasp?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2505" }, "answer" : "Shen", "question" : "Whose is the ultimate ability Stand United?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2506" }, "answer" : "Malphite", "question" : "Whose is the ultimate ability Unstoppable Force?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2507" }, "answer" : "Kayle", "question" : "Whose is the ultimate ability Intervention?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2508" }, "answer" : "Sion", "question" : "Whose is the ultimate ability Cannibalism?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2509" }, "answer" : "Veigar", "question" : "Whose is the ultimate ability Primordial Burst?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db250a" }, "answer" : "Alistar", "question" : "Whose is the ultimate ability Unbreakable Will?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db250b" }, "answer" : "Kennen", "question" : "Whose is the ultimate ability Slicing Maelstrom?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db250c" }, "answer" : "Gragas", "question" : "Whose is the ultimate ability Explosive Cask?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db250d" }, "answer" : "Karthus", "question" : "Whose is the ultimate ability Requiem?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db250e" }, "answer" : "Warwick", "question" : "Whose is the ultimate ability Infinite Duress?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db250f" }, "answer" : "Jax", "question" : "Whose is the ultimate ability Relentless Assault?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2510" }, "answer" : "Dr Mundo", "question" : "Whose is the ultimate ability Sadism?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2511" }, "answer" : "Rammus", "question" : "Whose is the ultimate ability Tremors?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2512" }, "answer" : "Evelynn", "question" : "Whose is the ultimate ability Malice and Spite?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2513" }, "answer" : "Nasus", "question" : "Whose is the ultimate ability Fury of the Sands?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2514" }, "answer" : "Maokai", "question" : "Whose is the ultimate ability Vengeful Maelstrom?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2515" }, "answer" : "Akali", "question" : "Whose is the ultimate ability Shadow Dance?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2516" }, "answer" : "Zylean", "question" : "Whose is the ultimate ability Chrono Shift?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2517" }, "answer" : "Malzahar", "question" : "Whose is the ultimate ability Nether Grasp?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2518" }, "answer" : "Pantheon", "question" : "Whose is the ultimate ability Grand Skyfall?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2519" }, "answer" : "Twisted Fate", "question" : "Whose is the ultimate ability Destiny?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db251a" }, "answer" : "Irelia", "question" : "Whose is the ultimate ability Transcendent Blades?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db251b" }, "answer" : "Nasus", "question" : "Who is the Curator of the Sands?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db251c" }, "answer" : "Varus", "question" : "Who is the Arrow of Retribution?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db251d" }, "answer" : "Xin Zhao", "question" : "Who is the Seneschal of Demacia?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db251e" }, "answer" : "Caitlyn", "question" : "Who is the Sheriff of Piltover?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db251f" }, "answer" : "Draven", "question" : "Who is the Glorious Executioner?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2520" }, "answer" : "Heimerdinger", "question" : "Who is the Revered Inventor?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2521" }, "answer" : "Teemo", "question" : "Who is the Swift Scout?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2522" }, "answer" : "Pantheon", "question" : "Who is the Artisan of War?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2523" }, "answer" : "Zyra", "question" : "Who is the Rise of the Thorns?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2524" }, "answer" : "Garen", "question" : "Who is the Might of Demacia?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2525" }, "answer" : "Darius", "question" : "Who is the Hand of Noxus?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2526" }, "answer" : "Evelynn", "question" : "Who is the Widowmaker?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2527" }, "answer" : "Kennen", "question" : "Who is the Heart of the Tempest?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2528" }, "answer" : "Leona", "question" : "Who is the Radiant Dawn?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2529" }, "answer" : "Tryndamere", "question" : "Who is the Barbarian King?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db252a" }, "answer" : "Ryze", "question" : "Who is the Rogue Mage?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db252b" }, "answer" : "Kog'Maw", "question" : "Who is the Mouth of the Abyss?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db252c" }, "answer" : "Volibear", "question" : "Who is the Thunder's Roar?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db252d" }, "answer" : "Ezreal", "question" : "Whose is the passive ability Rising Spell Force?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db252e" }, "answer" : "Renekton", "question" : "Whose is the passive ability Reign of Anger?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db252f" }, "answer" : "Garen", "question" : "Whose is the passive ability Perseverance?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2530" }, "answer" : "Nidalee", "question" : "Whose is the passive ability Prowl?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2531" }, "answer" : "Lux", "question" : "Whose is the passive ability Illumination?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2532" }, "answer" : "Galio", "question" : "Whose is the passive ability Runic Skin?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2533" }, "answer" : "Blue Pill", "question" : "What was the original name of the Recall ability?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2534" }, "answer" : "Malcolm", "question" : "What is Graves' first name?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2535" }, "answer" : "Tryndamere", "question" : "Who is Ashe married to?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2536" }, "answer" : "Karthus", "question" : "Who is the singer of the Pentakill band?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2537" }, "answer" : "Bristle", "question" : "What is the name of Sejuani's boar?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2538" }, "answer" : "Tibbers", "question" : "What is the name of Annie's bear?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2539" }, "answer" : "The Minotaur", "question" : "What is the title of Alistar?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db253a" }, "answer" : "The Undead Champion", "question" : "What is the title of Sion?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db253b" }, "answer" : "The Battle Mistress", "question" : "What is the title of Sivir?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db253c" }, "answer" : "The Void Walker", "question" : "What is the title of Kassadin?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db253d" }, "answer" : "The Deathsinger", "question" : "What is the title of Karthus?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db253e" }, "answer" : "The Blood Hunter", "question" : "What is the title of Warwick?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db253f" }, "answer" : "The Plague Rat", "question" : "What is the title of Twitch?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2540" }, "answer" : "The Starchild", "question" : "What is the title of Soraka?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2541" }, "answer" : "The Gem Knight", "question" : "What is the title of Taric?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2542" }, "answer" : "The Swift Scout", "question" : "What is the title of Teemo?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2543" }, "answer" : "Willump", "question" : "What it the name of Nunu's Yeti?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2544" }, "answer" : "Zilean", "question" : "Who is Volibear sworn enemy?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2545" }, "answer" : "Cassiopeia", "question" : "Who is Katarina's sister?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2546" }, "answer" : "Renekton", "question" : "Who is the brother of Nasus?" }
+{ "_id" : { "$oid" : "52a116fc1d41c875a9db2547" }, "answer" : "Jax", "question" : "Who is Gragas' drinking buddy?" }
