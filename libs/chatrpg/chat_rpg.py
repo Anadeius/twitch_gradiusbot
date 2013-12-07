@@ -93,12 +93,15 @@ class ChatRpg():
         nouns = open("data/nouns.txt").read().splitlines()
         adj = open("data/adjectives.txt").read().splitlines()
         name = random.choice(adj) + " " + random.choice(nouns)
-        e_hp, e_str, e_vit, e_agi, e_dex = 0, 0, 0, 0, 0
+        attr = [0, 0, 0, 0]
         while total_points != 0:
-            ## Add each attribute to a list, pick a random stat from the list and add a random point value til 0
-            e_hp += random.randint(0, total_points)
-
-        print name
+            for x in range(0,len(attr)):
+                num = random.randint(0, total_points)
+                attr[x] = attr[x] + num
+                total_points -= num
+        e_str, e_vit, e_agi, e_dex = attr
+        e_hp = e_vit * 5
+        return name, e_str, e_vit, e_agi, e_dex, e_hp
 
     def save_character(self):
         print
