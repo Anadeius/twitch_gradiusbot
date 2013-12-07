@@ -89,9 +89,15 @@ class ChatRpg():
         print
 
     def gen_creature(self, difficulty):
+        total_points = difficulty
         nouns = open("data/nouns.txt").read().splitlines()
         adj = open("data/adjectives.txt").read().splitlines()
         name = random.choice(adj) + " " + random.choice(nouns)
+        e_hp, e_str, e_vit, e_agi, e_dex = 0, 0, 0, 0, 0
+        while total_points != 0:
+            ## Add each attribute to a list, pick a random stat from the list and add a random point value til 0
+            e_hp += random.randint(0, total_points)
+
         print name
 
     def save_character(self):
