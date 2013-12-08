@@ -12,6 +12,8 @@ class ChatRpg():
         config.read(config_file)
         self.max_start_stats = config.getint('Settings', 'max_start_stats')
         self.hit_mod = config.getfloat('Settings', 'hit_mod')
+        self.xp_curve = config.getfloat('Settings', 'xp_curve')
+        self.xp_mod = config.getfloat('Settings', 'xp_mod')
 
         client = pymongo.MongoClient()
         rpg_db = client.rpg_db
@@ -55,7 +57,7 @@ class ChatRpg():
             if (s_str + s_vit + s_dex + s_agi == self.max_start_stats) and (self.characters.find({"name": char_name}).count() == 0):
                 (s_str, s_vit, s_dex, s_agi) = (s_str+1, s_vit+1, s_dex+1, s_agi+1)
                 hp = s_vit * 5
-                char_post = {"name": char_name, "level": 1, "xp": 0, "hp": hp, "str": s_str, "vit": s_vit, "agi": s_agi, "dex": s_dex, "gold": 0}
+                char_post = {"name": char_name, "level": 1, "xp": 0, "next_level": 100, "hp": hp, "str": s_str, "vit": s_vit, "agi": s_agi, "dex": s_dex, "gold": 0}
                 self.characters.insert(char_post)
                 return "Character created successfully!"
             else:
@@ -72,14 +74,35 @@ class ChatRpg():
         agi1, dex1 = db.find_one({"name": name})["agi"], db.find_one({"name": name})["dex"]
         return hp1, str1, vit1, agi1, dex1
 
-    def run_adventure(self):
+    def give_gold(self, name, gold):
+        try:
+            self.characters.update({'name': name}, {"$set": {'gold': self.characters.find({'name': name})[0]['gold'] + int(gold)}})
+            print "Gave " + name + " " + str(gold) + " gold."
+        except:
+            print "Error giving gold: ", sys.exc_info()
+
+    def give_xp(self, name, xp):
+        try:
+            curr_xp = self.characters.find({'name':name})[0]['xp']
+            curr_level = self.characters.find({'name':name})[0]['level']
+            next_level = self.characters.find({'name':name})[0]['next_level']
+            self.characters.update({'name': name}, {"$set": {'xp': curr_xp + int(xp) * self.xp_mod}})
+            if curr_xp >= next_level:
+                self.characters.update({'name': name}, {"$set": {'level': curr_level + 1}})
+                self.characters.update({'name': name}, {"$set": {'next_level': next_level + next_level * self.xp_curve}})
+                print name + " is now level " + str(curr_level)
+                print "Next level is at " + str(next_level)
+
+        except:
+            print "Error giving xp : ", sys.exc_info()
+
+    def run_adventure(self, turns):
         try:
             ind = random.randint(0, self.enemies.count())
             enemy = self.enemies.find()[ind]['name']
             ind = random.randint(0, self.enemies.count())
             enemy2 = self.enemies.find()[ind]['name']
             self.run_combat(enemy, 'e', enemy2, 'e')
-
         except:
             print "Error running adventure: ", sys.exc_info()
 
