@@ -1,8 +1,10 @@
 import pymongo
+import paramiko
 import random
 import sys
 import ConfigParser
 import logging
+import os
 
 
 class ChatRpg():
@@ -22,6 +24,12 @@ class ChatRpg():
         self.hit_mod = config.getfloat('Settings', 'hit_mod')
         self.xp_curve = config.getfloat('Settings', 'xp_curve')
         self.xp_mod = config.getfloat('Settings', 'xp_mod')
+        self.scp_host = config.get('Settings', 'scp_host')
+        self.scp_port = config.getint('Settings', 'scp_port')
+        self.char_sheet_folder = config.get('Settings', 'char_sheet_folder')
+        self.sftp_dir = config.get('Settings', 'sftp_dir')
+        self.scp_user = config.get('Settings', 'scp_user')
+        self.ssh_key = config.get('Settings', 'ssh_key')
 
         client = pymongo.MongoClient()
         rpg_db = client.rpg_db
@@ -53,7 +61,12 @@ class ChatRpg():
             self.sys_log.error("Error equipping items: " + str(sys.exc_info()))
 
     def export_to_web(self):
-        print
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(self.scp_host, port=self.scp_port, key_filename=self.ssh_key, username=self.scp_user)
+        sftp = ssh.open_sftp()
+        for f in os.listdir(self.char_sheet_folder):
+            sftp.put(self.char_sheet_folder + "/" + f, self.sftp_dir + "/" + f)
 
     def fill_enemy_db(self, count):
         self.enemies.remove()
@@ -123,7 +136,9 @@ class ChatRpg():
         cstring += "Legs: " + str(s_inven['legs']) + '\n'
         cstring += "Boots: " + str(s_inven['boots']) + '\n\n'
         cstring += "Inventory: " + str(s_inven['items'])
-
+        c_sheet_file = open(self.char_sheet_folder + "/" + name + "_sheet.txt", 'w')
+        c_sheet_file.write(cstring)
+        c_sheet_file.close()
         return cstring
 
     def get_stats(self, name, db):
@@ -242,7 +257,6 @@ class ChatRpg():
 
         except:
             self.sys_log.error("Error running combat: " + str(sys.exc_info()))
-
 
     def set_stats(self, name, stats_array):
         c_hp, c_str, c_vit, c_agi, c_dex = self.get_stats(name, self.characters)
