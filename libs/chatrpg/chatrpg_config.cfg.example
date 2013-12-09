@@ -1,0 +1,12 @@
+[Settings]
+max_start_stats = 30
+hit_mod = 1.0
+xp_rate = 1.0
+xp_curve = .3
+xp_mod = 1.0
+scp_user =
+scp_host =
+scp_port =
+sftp_dir =
+ssh_key =
+char_sheet_folder =

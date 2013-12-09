@@ -5,6 +5,7 @@ import sys
 import ConfigParser
 import logging
 import os
+import shutil
 
 
 class ChatRpg():
@@ -60,13 +61,17 @@ class ChatRpg():
         except:
             self.sys_log.error("Error equipping items: " + str(sys.exc_info()))
 
-    def export_to_web(self):
-        ssh = paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(self.scp_host, port=self.scp_port, key_filename=self.ssh_key, username=self.scp_user)
-        sftp = ssh.open_sftp()
-        for f in os.listdir(self.char_sheet_folder):
-            sftp.put(self.char_sheet_folder + "/" + f, self.sftp_dir + "/" + f)
+    def export_to_web(self, local=True):
+        if not local:
+            ssh = paramiko.SSHClient()
+            ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+            ssh.connect(self.scp_host, port=self.scp_port, key_filename=self.ssh_key, username=self.scp_user)
+            sftp = ssh.open_sftp()
+            for f in os.listdir(self.char_sheet_folder):
+                sftp.put(self.char_sheet_folder + "/" + f, self.sftp_dir + "/" + f)
+        else:
+            for f in os.listdir(self.char_sheet_folder):
+                shutil.copy(self.char_sheet_folder + "/" + f, self.sftp_dir)
 
     def fill_enemy_db(self, count):
         self.enemies.remove()
