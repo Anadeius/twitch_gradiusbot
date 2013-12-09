@@ -30,6 +30,28 @@ class ChatRpg():
         self.inventory = rpg_db.inventory
         self.stats = rpg_db.stats
 
+    def allocate_stats(self, name, add_stats_array):
+        current_stats = self.characters.find({'name': name})[0]['free_stats']
+        cost = sum(add_stats_array)
+        try:
+            if cost <= current_stats and len(add_stats_array) == 4:
+                self.set_stats(name, add_stats_array)
+                self.characters.update({'name': name}, {"$set": {'free_stats': current_stats - cost}})
+                return "You have spent " + str(cost) + " stats. You have " + str(current_stats - cost) + " remaining."
+        except:
+            self.sys_log.error("Error allocating stats: " + str(sys.exc_info()))
+
+    def equip_items(self, name, item_name, item_type, item_stats):
+        try:
+            if self.inventory.find({'name':name})[0][item_type] is not None:
+                old_stats = self.inventory.find({'name':name})[0][item_type][1]
+                neg_stats = [-1*i for i in old_stats]
+                self.set_stats(name, neg_stats)
+            self.inventory.update({'name': name}, {"$set": {item_type: [item_name, item_stats]}})
+            self.set_stats(name, item_stats)
+        except:
+            self.sys_log.error("Error equipping items: " + str(sys.exc_info()))
+
     def fill_enemy_db(self, count):
         self.enemies.remove()
         for x in range(0, count):
@@ -58,7 +80,7 @@ class ChatRpg():
     def gen_item(self):
         print
 
-    def generate_character(self, char_name, in_str, in_vit, in_dex, in_agi):
+    def generate_character(self, char_name, in_str, in_vit, in_agi, in_dex):
         s_str = int(in_str)
         s_vit = int(in_vit)
         s_dex = int(in_dex)
@@ -68,7 +90,9 @@ class ChatRpg():
             if (s_str + s_vit + s_dex + s_agi == self.max_start_stats) and (self.characters.find({"name": char_name}).count() == 0):
                 (s_str, s_vit, s_dex, s_agi) = (s_str+1, s_vit+1, s_dex+1, s_agi+1)
                 hp = s_vit * 5
-                char_post = {"name": char_name, "level": 1, "xp": 0, "next_level": 100, "hp": hp, "str": s_str, "vit": s_vit, "agi": s_agi, "dex": s_dex, "gold": 0}
+                char_post = {"name": char_name, "level": 1, "xp": 0, "next_level": 100, "free_stats": 0, "hp": hp, "str": s_str, "vit": s_vit, "agi": s_agi, "dex": s_dex, "gold": 0}
+                inven_post = {"name": char_name, "helm": None, "chest": None, "weapon": None, "legs": None, "boots": None, "items": []}
+                self.inventory.insert(inven_post)
                 self.characters.insert(char_post)
                 self.sys_log.debug("Character created successfully: " + str(char_post))
             else:
@@ -97,16 +121,16 @@ class ChatRpg():
 
     def give_xp(self, name, xp):
         try:
-            curr_xp = self.characters.find({'name':name})[0]['xp']
-            curr_level = self.characters.find({'name':name})[0]['level']
-            next_level = self.characters.find({'name':name})[0]['next_level']
+            curr_xp = self.characters.find({'name': name})[0]['xp']
+            curr_level = self.characters.find({'name': name})[0]['level']
+            next_level = self.characters.find({'name': name})[0]['next_level']
+            current_stats = self.characters.find({'name': name})[0]['free_stats']
             self.characters.update({'name': name}, {"$set": {'xp': curr_xp + int(xp) * self.xp_mod}})
             if curr_xp >= next_level:
-                print "INSIDE THIS LOOP"
                 self.characters.update({'name': name}, {"$set": {'level': curr_level + 1}})
                 self.characters.update({'name': name}, {"$set": {'xp': next_level - curr_xp}})
                 self.characters.update({'name': name}, {"$set": {'next_level': next_level + next_level * self.xp_curve}})
-
+                self.characters.update({'name': name}, {"$set": {'free_stats': current_stats + 5}})
         except:
             self.sys_log.error("Error giving xp : " + str(sys.exc_info()))
 
@@ -197,5 +221,12 @@ class ChatRpg():
         except:
             self.sys_log.error("Error running combat: " + str(sys.exc_info()))
 
-    def save_character(self):
+    def save_character_sheet(self):
         print
+
+    def set_stats(self, name, stats_array):
+        c_hp, c_str, c_vit, c_agi, c_dex = self.get_stats(name, self.characters)
+        self.characters.update({'name': name}, {"$set": {'str': c_str + stats_array[0]}})
+        self.characters.update({'name': name}, {"$set": {'vit': c_vit + stats_array[1]}})
+        self.characters.update({'name': name}, {"$set": {'agi': c_agi + stats_array[2]}})
+        self.characters.update({'name': name}, {"$set": {'dex': c_dex + stats_array[3]}})
