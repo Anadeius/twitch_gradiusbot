@@ -28,6 +28,7 @@ class ChatRpg():
         self.scp_host = config.get('Settings', 'scp_host')
         self.scp_port = config.getint('Settings', 'scp_port')
         self.char_sheet_folder = config.get('Settings', 'char_sheet_folder')
+        self.combat_log = config.get('Settings', 'combat_logs')
         self.sftp_dir = config.get('Settings', 'sftp_dir')
         self.scp_user = config.get('Settings', 'scp_user')
         self.ssh_key = config.get('Settings', 'ssh_key')
@@ -197,7 +198,7 @@ class ChatRpg():
             char1_log.setLevel(logging.DEBUG)
         else:
             char1_log = logging.getLogger(name1 + '-combat-log')
-            char1_log_hndl = logging.FileHandler('logs/chars/' + name1 + '_combat.log')
+            char1_log_hndl = logging.FileHandler(self.combat_log + "/" + name1 + '_combat.log')
             char1_log_hndl.setFormatter(formatter)
             char1_log.addHandler(char1_log_hndl)
             char1_log.setLevel(logging.DEBUG)
@@ -211,7 +212,7 @@ class ChatRpg():
             char2_log.setLevel(logging.DEBUG)
         else:
             char2_log = logging.getLogger(name2 + '-combat-log')
-            char2_log_hndl = logging.FileHandler('logs/chars/' + name2 + '_combat.log')
+            char2_log_hndl = logging.FileHandler(self.combat_log + "/" + name2 + '_combat.log')
             char2_log_hndl.setFormatter(formatter)
             char2_log.addHandler(char2_log_hndl)
             char2_log.setLevel(logging.DEBUG)
@@ -250,14 +251,14 @@ class ChatRpg():
             if hp1 > hp2:
                 char1_log.info(name1 + " has beaten " + name2 + " in combat!")
                 char2_log.info(name1 + " has beaten " + name2 + " in combat!")
-                char1_log.info('\n')
-                char2_log.info('\n')
+                char1_log.info('==========================================\n')
+                char2_log.info('==========================================\n')
                 return name1
             else:
                 char1_log.info(name2 + " has beaten " + name1 + " in combat!")
                 char2_log.info(name2 + " has beaten " + name1 + " in combat!")
-                char1_log.info('\n')
-                char2_log.info('\n')
+                char1_log.info('==========================================\n')
+                char2_log.info('==========================================\n')
                 return name2
 
         except:
