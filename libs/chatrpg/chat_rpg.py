@@ -52,6 +52,9 @@ class ChatRpg():
         except:
             self.sys_log.error("Error equipping items: " + str(sys.exc_info()))
 
+    def export_to_web(self):
+        print
+
     def fill_enemy_db(self, count):
         self.enemies.remove()
         for x in range(0, count):
@@ -103,6 +106,25 @@ class ChatRpg():
 
         except:
             self.sys_log.error("Error generating character: " + str(sys.exc_info()))
+
+    def get_character_sheet(self, name):
+        s_hp, s_str, s_vit, s_agi, s_dex = self.get_stats('riotgradius', self.characters)
+        s_inven = self.inventory.find({'name': name})[0]
+        cstring = ""
+        cstring += "Character Name: " + name + '\n'
+        cstring += "Level: " + str(self.characters.find({'name': name})[0]['level']) + "    XP: " + str(self.characters.find({'name': name})[0]['xp'])
+        cstring += "    Next level: " + str(self.characters.find({'name': name})[0]['next_level']) + ' XP\n'
+        cstring += "Gold: " + str(self.characters.find({'name': name})[0]['gold']) + '\n\n'
+        cstring += "HP: " + str(s_hp) + "\n"
+        cstring += "STR: " + str(s_str) + "\nVIT: " + str(s_vit) + "\nAGI: " + str(s_agi) + "\nDEX: " + str(s_dex) + "\n\n"
+        cstring += "Equipment:\n"
+        cstring += "Helm: " + str(s_inven['helm']) + '\n'
+        cstring += "Chest: " + str(s_inven['chest']) + '\n'
+        cstring += "Legs: " + str(s_inven['legs']) + '\n'
+        cstring += "Boots: " + str(s_inven['boots']) + '\n\n'
+        cstring += "Inventory: " + str(s_inven['items'])
+
+        return cstring
 
     def get_stats(self, name, db):
         try:
@@ -221,11 +243,11 @@ class ChatRpg():
         except:
             self.sys_log.error("Error running combat: " + str(sys.exc_info()))
 
-    def save_character_sheet(self):
-        print
 
     def set_stats(self, name, stats_array):
         c_hp, c_str, c_vit, c_agi, c_dex = self.get_stats(name, self.characters)
+        hp = c_vit * 5
+        self.characters.update({'name': name}, {"$set": {'hp': hp}})
         self.characters.update({'name': name}, {"$set": {'str': c_str + stats_array[0]}})
         self.characters.update({'name': name}, {"$set": {'vit': c_vit + stats_array[1]}})
         self.characters.update({'name': name}, {"$set": {'agi': c_agi + stats_array[2]}})
