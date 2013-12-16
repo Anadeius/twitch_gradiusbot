@@ -1,9 +1,7 @@
 ## ircutils documentation: http://dev.guardedcode.com/docs/ircutils/py-modindex.html
 import ConfigParser
 import sys
-
 from ircutils import client
-
 from libs.message_processor import MessageProcessor
 from libs.irc_loader import IrcLoader
 
@@ -27,9 +25,6 @@ class IrcBot(client.SimpleClient):
 
         channels_string = config.get('Settings', 'channels')
         self.channels_join = list(filter(None, (x.strip() for x in channels_string.splitlines())))
-
-        plugin_string = config.get('Settings', 'plugins')
-        self.plugins = list(filter(None, (x.strip() for x in plugin_string.splitlines())))
 
         self.plugin_loader = IrcLoader()
 

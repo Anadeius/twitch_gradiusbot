@@ -6,8 +6,6 @@ from libs.permissions import Permissions
 from libs.scoreboard import Scoreboard
 
 name = "old_trivia.py"
-t_file = "plugins/data/trivia.tmp"
-data = temp.load_temp(t_file)
 perm = Permissions()
 sb = Scoreboard()
 client = pymongo.MongoClient()
