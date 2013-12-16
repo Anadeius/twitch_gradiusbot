@@ -1,7 +1,6 @@
 import sys
 import random
 import pymongo
-import libs.load_temp as temp
 from libs.permissions import Permissions
 from libs.scoreboard import Scoreboard
 
