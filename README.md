@@ -2,6 +2,9 @@
 
 A bot for moderating twitch chat.  Can load python code that fits the plugin standard without having to restart the bot, as well as reload code that was changed without a restart.
 
+## Submitting Code
+Please help if you would like to.  I try and stick to the PEP8 standards as much as possible, so I'd appreciate it if you do the same.  I'll review the code and merge it if all is good.  A good way to figure out what might be needed is to look at the issues list.
+
 
 ## Plugins
 
