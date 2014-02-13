@@ -27,6 +27,7 @@ class IrcBot(client.SimpleClient):
         self.channels_join = list(filter(None, (x.strip() for x in channels_string.splitlines())))
 
         self.plugin_loader = IrcLoader()
+        self.daemon_loader = IrcLoader()
 
         client.SimpleClient.__init__(self, self.nick)
 
@@ -43,6 +44,15 @@ class IrcBot(client.SimpleClient):
             split = event.message.split()
             cmd = split[0]
             arg = split[1]
+
+            if cmd == "@dload":
+                try:
+                    self.daemon_loader.load(arg, self.send_message_callback)
+                    split = arg.split('/')
+                    name = split[len(split) - 1]
+                    self.mp.thread_message(self.daemon_loader.run_daemon, (name, event.target))
+                except:
+                    print "Error running daemon:", sys.exc_info()
 
             if cmd == "@load":
                 try:
