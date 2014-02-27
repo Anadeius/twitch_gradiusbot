@@ -1,4 +1,4 @@
-import thread
+from multiprocessing import Process
 
 
 class MessageProcessor():
@@ -6,5 +6,6 @@ class MessageProcessor():
     def __init__(self):
         print "Message processor initialized."
 
-    def thread_message(self, message_function, arg_tuple):
-        thread.start_new_thread(message_function, arg_tuple)
+    def create_process(self, message_function, arg_tuple):
+        p = Process(target=message_function, args=arg_tuple)
+        p.start()

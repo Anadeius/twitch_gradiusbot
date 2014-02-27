@@ -37,6 +37,10 @@ def send_input(inp, sender, channel):
         trivia_question(channel)
 
 
+def execute(args_list, channel):
+    send_message_function(channel, "I have nothing to execute.")
+
+
 def desc():
     return ""
 

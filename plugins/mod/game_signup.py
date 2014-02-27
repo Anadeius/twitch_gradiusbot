@@ -47,6 +47,10 @@ def send_input(inp, sender, channel):
         cooldown = []
 
 
+def execute(args_list, channel):
+    send_message_function(channel, "I have nothing to execute.")
+
+
 ## Returns a description of the module including the name at the top
 def desc():
     return name + ": tracks users that run the !signup command to sign up for games."

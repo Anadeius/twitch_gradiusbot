@@ -46,7 +46,7 @@ class IrcBot(client.SimpleClient):
 
             if cmd == "@execute":
                 try:
-                    self.plugin_loader.execute(arg_list, event.target)
+                    self.mp.create_process(self.plugin_loader.execute, (arg_list, event.target))
                 except:
                     print "Error executing command:", sys.exc_info()
 
@@ -64,7 +64,7 @@ class IrcBot(client.SimpleClient):
 
         for mod in self.plugin_loader.listMods():
             try:
-                self.mp.thread_message(self.plugin_loader.run, (mod, event.message, event.source, event.target))
+                self.mp.create_process(self.plugin_loader.run, (mod, event.message, event.source, event.target,))
             except:
                 print "Error running mod:", sys.exc_info()
 

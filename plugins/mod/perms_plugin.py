@@ -5,12 +5,14 @@ from libs.permissions import Permissions
 name = "perms_plugin.py"
 permissions = Permissions()
 
+
 ## What the module should return when processing text from IRC
 ## Gets inp from IRC, processes it, and returns the
 def buildup(send_message_callback):
     print "Loading permissions helper."
     global send_message_function
     send_message_function = send_message_callback
+
 
 def send_input(inp, sender, channel):
 
@@ -28,9 +30,15 @@ def send_input(inp, sender, channel):
     if inp == "listmods":
         send_message_function(channel,permissions.listMods())
 
+
+def execute(args_list, channel):
+    send_message_function(channel, "I have nothing to execute.")
+
+
 ## Returns a description of the module including the name at the top
 def desc():
     return "Module name" + name + "Example Description"
+
 
 def teardown():
     print "Removing permissions plugin."

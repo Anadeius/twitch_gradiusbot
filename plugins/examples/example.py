@@ -14,7 +14,8 @@ def buildup(send_message_callback):
 
 ## This function is called any time the bot receives input
 def send_input(inp, sender, channel):
-    send_message_function(channel, "Example message.")
+    if sender == 'riotgradius':
+        send_message_function(channel, "You said: " + inp)
 
 
 def execute(args_list, channel):
