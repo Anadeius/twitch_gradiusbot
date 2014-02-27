@@ -13,6 +13,7 @@ def buildup(send_message_callback):
     global send_message_function
     send_message_function = send_message_callback
 
+
 def send_input(inp,sender,channel):
 
     words = [line.strip() for line in open('plugins/data/items.dic')]
@@ -28,9 +29,15 @@ def send_input(inp,sender,channel):
     if ("what do you give a bitch?" in inp.lower()):
         send_message_function(channel,'GIVE THAT BITCH A' + gift + '. BITCHES LOVE ' + plural + '.')
 
+
+def execute(args_list, channel):
+    send_message_function(channel, "I have nothing to execute.")
+
+
 ## Returns a description of the module including the name at the top
 def desc():
     return name + ":Tells you what to give a bitch."
+
 
 def pluralize(singular):
     root = singular
@@ -56,6 +63,7 @@ def pluralize(singular):
         suffix = 's'
     plural = root + suffix
     return plural
+
 
 def teardown():
     print "No more telling them what to give bitches."
