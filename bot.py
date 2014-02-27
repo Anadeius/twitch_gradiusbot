@@ -27,7 +27,6 @@ class IrcBot(client.SimpleClient):
         self.channels_join = list(filter(None, (x.strip() for x in channels_string.splitlines())))
 
         self.plugin_loader = IrcLoader()
-        self.daemon_loader = IrcLoader()
 
         client.SimpleClient.__init__(self, self.nick)
 
@@ -43,26 +42,23 @@ class IrcBot(client.SimpleClient):
         if event.message[0] == "@" and event.source == self.owner:
             split = event.message.split()
             cmd = split[0]
-            arg = split[1]
+            arg_list = split[1:]
 
-            if cmd == "@dload":
+            if cmd == "@execute":
                 try:
-                    self.daemon_loader.load(arg, self.send_message_callback)
-                    split = arg.split('/')
-                    name = split[len(split) - 1]
-                    self.mp.thread_message(self.daemon_loader.run_daemon, (name, event.target))
+                    self.plugin_loader.execute(arg_list, event.target)
                 except:
-                    print "Error running daemon:", sys.exc_info()
+                    print "Error executing command:", sys.exc_info()
 
             if cmd == "@load":
                 try:
-                    self.plugin_loader.load(arg,self.send_message_callback)
+                    self.plugin_loader.load(arg_list[0], self.send_message_callback)
                 except:
                     print "Error loading mod:", sys.exc_info()
 
             if cmd == "@unload":
                 try:
-                    self.plugin_loader.unload(arg)
+                    self.plugin_loader.unload(arg_list[0])
                 except:
                     print "Error unloading mod:", sys.exc_info()
 

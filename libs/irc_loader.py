@@ -30,9 +30,10 @@ class IrcLoader():
         ## Sends the user input to the plugin
         self.modList[module].send_input(inp, sender, channel)
 
-    def run_daemon(self, module, channel):
+    def execute(self, args_list, channel):
         ## Sends the user input to the plugin
-        self.modList[module].run(channel)
+        module = args_list[0]
+        self.modList[module].execute(args_list[1:], channel)
 
     def desc(self, module):
         ## Runs the desc method for the module

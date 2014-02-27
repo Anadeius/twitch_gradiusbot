@@ -1,4 +1,4 @@
-## This is an example file for how all IRC modules should be
+import random
 
 ## Name of the module, to be returned in desc()
 name = "buttreplacer.py"
@@ -14,7 +14,21 @@ def buildup(send_message_callback):
 
 ## This function is called any time the bot receives input
 def send_input(inp, sender, channel):
-    send_message_function(channel, "Example message.")
+    butt_percent = 10
+
+    if random.randint(0, 100) <= butt_percent:
+        string_list = inp.split()
+        target = random.choice(string_list)
+        target_index = string_list.index(target)
+        string_list[target_index] = 'butt'
+
+        new_string = ' '.join(string_list)
+        send_message_function(channel, sender + ", I think you meant: \"" + new_string + "\"")
+
+
+
+def execute(args_list, channel):
+    send_message_function(channel, "I don't execute anything.")
 
 
 ## Returns a description of the module including the name at the top
