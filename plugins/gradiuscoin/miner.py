@@ -35,12 +35,12 @@ def buildup(send_message_callback):
     send_message_function = send_message_callback
 
 
-## This function is called any time the bot receives input
-def run_daemon(channel):
+def execute(args_list, channel):
     while True:
-        print "I'm looping because I'm cool."
+        send_message_function(channel, "This is a loop, these are your args: " + str(args_list))
         time.sleep(5)
 
+## This function is called any time the bot receives input
 def send_input(inp,sender,channel):
     print "This is running and I dont know why."
 

@@ -1,4 +1,5 @@
-## This is an example file for how all IRC modules should be
+#TODO: Find a way to work around the circular dependency when adding the first Mod, maybe use config?
+
 from libs.permissions import Permissions
 
 ## Name of the module, to be returned in desc()
@@ -16,19 +17,25 @@ def buildup(send_message_callback):
 
 def send_input(inp, sender, channel):
 
-    if inp.split()[0] == "isMod":
-        send_message_function(channel,"isMod:" + str(permissions.isMod(inp.split()[1])))
+    try:
+        arg_list = inp.split()
 
-    if inp.split()[0] == "addMod" and permissions.isMod(sender):
-        permissions.addMod(inp.split()[1])
-        send_message_function(channel,"Added " + inp.split()[1] + " as a mod.")
+        if arg_list[0] == "@addtag" and permissions.has_tag(sender, 'mod'):
+            permissions.add_tag(arg_list[1], arg_list[2])
+            send_message_function(channel, "Added " + str(arg_list[2]) + " to " + arg_list[1] + " tags.")
 
-    if inp.split()[0] == "remMod" and permissions.isMod(sender):
-        permissions.remMod(inp.split()[1])
-        send_message_function(channel,"Removed " + inp.split()[1] + " as a mod.")
+        if arg_list[0] == "@remtag" and permissions.has_tag(sender, 'mod'):
+            permissions.rem_tag(arg_list[1], arg_list[2])
+            send_message_function(channel, "Removed " + str(arg_list[2]) + " from " + arg_list[1] + " tags.")
 
-    if inp == "listmods":
-        send_message_function(channel,permissions.listMods())
+        if arg_list[0] == "@hastag" and permissions.has_tag(sender, 'mod'):
+            send_message_function(channel, str(arg_list[1]) + " has " + str(arg_list[2]) + ": "
+                                           + permissions.has_tag(arg_list[1], arg_list[2]))
+
+        if arg_list[0] == "@listtags" and permissions.has_tag(sender, 'mod'):
+            send_message_function(channel, str(permissions.list_tags(arg_list[1])))
+    except:
+        print "Something broke in perms_plugin.py"
 
 
 def execute(args_list, channel):

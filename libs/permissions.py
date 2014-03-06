@@ -1,29 +1,56 @@
-import libs.load_temp as temp
+import pickle
+import os
 
 class Permissions():
 
     def __init__(self):
         print "Initializing permissions."
-        self.t_file = "libs/permissions.tmp"
-        self.data = temp.load_temp(self.t_file)
+        self.file_name = "libs/permissions.tmp"
 
-    def isOwner(self,nick):
-        return self.data['owner'] == nick
+        if os.path.isfile(self.file_name):
+            self.load()
 
-    def isMod(self,nick):
-        return nick in self.data['mods'].split(' ')
+        else:
+            self.perms = {}
 
-    def addMod(self,nick):
-        temp_list = self.data['mods'].split()
-        temp_list.append(nick)
-        self.data['mods'] = ' '.join(temp_list)
-        temp.save_temp(self.t_file, self.data)
+    def add_tag(self, nick, tag):
+        self.load()
 
-    def remMod(self,nick):
-        temp_list = self.data['mods'].split()
-        temp_list.remove(nick)
-        self.data['mods'] = ' '.join(temp_list)
-        temp.save_temp(self.t_file, self.data)
+        if nick in self.perms.keys():
+            if not tag in self.perms[nick]:
+                self.perms[nick].append(tag)
+        else:
+            self.perms[nick] = [tag]
 
-    def listMods(self):
-        return self.data['mods']
+        self.save()
+
+    def has_tag(self, nick, tag):
+        self.load()
+
+        if nick in self.perms.keys():
+            return tag in self.perms[nick]
+
+        else:
+            return False
+
+    def list_tags(self, nick):
+        self.load()
+
+        if nick in self.perms.keys():
+            return self.perms[nick]
+
+    def rem_tag(self, nick, tag):
+        self.load()
+
+        if nick in self.perms.keys():
+            if tag in self.perms[nick]:
+                self.perms[nick].remove(tag)
+
+        self.save()
+
+
+    def save(self):
+        pickle.dump(self.perms, open(self.file_name, "wb"))
+
+    def load(self):
+        self.perms = pickle.load(open(self.file_name, "rb"))
