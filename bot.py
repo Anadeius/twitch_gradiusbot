@@ -44,6 +44,15 @@ class IrcBot(client.SimpleClient):
             cmd = split[0]
             arg_list = split[1:]
 
+            if cmd == "@massload":
+                try:
+                    mod_file = open(arg_list[0])
+                    for line in mod_file:
+                        self.plugin_loader.load(line.rstrip(), self.send_message_callback)
+
+                except:
+                    print "Error."
+
             if cmd == "@execute":
                 try:
                     self.mp.create_process(self.plugin_loader.execute, (arg_list, event.target))
