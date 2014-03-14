@@ -1,0 +1,2 @@
+plugins/mod/perms_plugin.py
+plugins/mod/game_signup.py

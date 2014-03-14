@@ -37,7 +37,6 @@ class IrcBot(client.SimpleClient):
         print "<{0}/{1}> {2}".format(event.source, event.target, event.message)
 
     def message_handler(self, client, event):
-
         ## Check for Admin commands
         if event.message[0] == "@" and event.source == self.owner:
             split = event.message.split()
@@ -51,7 +50,7 @@ class IrcBot(client.SimpleClient):
                         self.plugin_loader.load(line.rstrip(), self.send_message_callback)
 
                 except:
-                    print "Error."
+                    print "Error using mass load:", sys.exc_info()
 
             if cmd == "@execute":
                 try:

@@ -1,0 +1,9 @@
+[Settings]
+server = localhost
+port = 6667
+nick = gradiusbot
+username = gradiusbot
+password =
+owner = riotgradius
+channels =
+    #riotgradius
