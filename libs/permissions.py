@@ -1,11 +1,12 @@
 import pickle
 import os
 
+
 class Permissions():
 
     def __init__(self):
         print "Initializing permissions."
-        self.file_name = "libs/permissions.tmp"
+        self.file_name = "libs/tmp/permissions.tmp"
 
         if os.path.isfile(self.file_name):
             self.load()

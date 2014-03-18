@@ -22,7 +22,6 @@ def send_input(inp, sender, channel):
 
     """
     #Current Ideas:
-    /roll game
     betting game - takes 3 people, two people to bet one manager
     pickpocket game - game of skill?
     """
