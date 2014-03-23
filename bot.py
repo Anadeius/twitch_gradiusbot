@@ -92,5 +92,5 @@ class IrcBot(client.SimpleClient):
         self.start()
 
 if __name__ == "__main__":
-    bot = IrcBot("twitch.cfg")
+    bot = IrcBot("twitch.cfg.local")
     bot.bot_start()
