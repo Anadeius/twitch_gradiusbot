@@ -41,4 +41,6 @@ Link to this readme.
 ```
 ## Shop
 ### item : price - description
+```
 test: 1 gc - this is a test item
+```
