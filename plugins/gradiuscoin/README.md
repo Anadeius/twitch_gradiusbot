@@ -7,8 +7,10 @@ A gradiuscoin is currency you can earn by participating in chat.  This is called
 
 ### implemented
 N/A
-
+```
+```
 ### future
+```
 !buy [item]
 
 Spend your gradiuscoins on this specific item.  An item/price list can be found at the bottom of this readme.
@@ -36,7 +38,7 @@ Bet [amount] on a roll from 1 - 100.  You earn a specific amount based on how hi
 !help
 
 Link to this readme.
-
+```
 ## Shop
 ### item : price - description
 test: 1 gc - this is a test item
