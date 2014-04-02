@@ -16,11 +16,11 @@ def buildup(send_message_callback):
     print "Loading gradiuscoin_user plugin"
     global send_message_function
     send_message_function = send_message_callback
-    limit.set_rate_limit('!wallet', 1, 1)
+    limit.set_rate_limit('!wallet', 1, 60)
     limit.set_rate_limit('!give', 3, 30)
     limit.set_rate_limit('!settings', 1, 3600)
     limit.set_rate_limit('!help', 1, 1800)
-    limit.set_rate_limit('!roll', 1, 1)
+    limit.set_rate_limit('!roll', 1, 600)
 
 
 ## This function is called any time the bot receives input

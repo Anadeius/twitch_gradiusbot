@@ -75,7 +75,7 @@ def execute(args_list, channel):
         if gc_db.talkers.find().count() > 0:
             talked_list = gc_db.talkers.find()[0]['talkers']
 
-        print "[DEBUG] Granting " + str(talked_list) + " with " + str(mine_rate*gc_per_mine) + " gradiuscoins"
+        #print "[DEBUG] Granting " + str(talked_list) + " with " + str(mine_rate*gc_per_mine) + " gradiuscoins"
         for user in talked_list:
             if gc_db.wallet.find({"nick": user}).count() > 0:
                 curr_wallet = float(gc_db.wallet.find({"nick": user})[0]['gc'])
