@@ -58,6 +58,7 @@ class GradiusCoins():
         t1_wallet = self.get_coins(target1)
 
         if t1_wallet >= amount:
+            self.take_coins(target1, amount)
             self.give_coins(target2, amount)
             success = True
 

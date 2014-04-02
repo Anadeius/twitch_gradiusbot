@@ -4,12 +4,14 @@ import sys
 from ircutils import client
 from libs.message_processor import MessageProcessor
 from libs.irc_loader import IrcLoader
+from libs.throttling import Throttling
 
 
 class IrcBot(client.SimpleClient):
 
     def __init__(self, config_file):
         self.mp = MessageProcessor()
+        self.throttle = Throttling()
 
         #Parse Configuration File
         config = ConfigParser.RawConfigParser()

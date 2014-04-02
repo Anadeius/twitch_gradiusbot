@@ -21,6 +21,7 @@ def send_input(inp, sender, channel):
 def execute(args_list, channel):
     send_message_function(channel, "Executing command.")
 
+
 ## Returns a description of the module including the name at the top
 def desc():
     return name + ": is an example plugin."
