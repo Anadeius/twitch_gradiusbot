@@ -1,5 +1,10 @@
 [Miner]
-addr =
-port =
-user =
-passwd =
+addr = localhost
+port = 27017
+user = miner
+passwd = password123
+mine_freq = 60
+mine_rate = 1.0
+gc_per_mine = 5
+tmp_file = plugins/gradiuscoin/miner.tmp
+
